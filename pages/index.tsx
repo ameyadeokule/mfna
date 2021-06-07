@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+
 import styles from './page1.module.css'
 
 function Heading (props){
@@ -15,7 +17,12 @@ function Heading (props){
 
 export default function Home() {
   return<div> 
-    <Heading heading='red heading' />
-  <h1 className={styles.header}>Hello World</h1>
+    <form method='POST' action='/api/hello'>
+      <input type='text' name='username' value='admin' />
+      <br />
+      <input type='password' name='pass' value='admin' />
+      <br />
+      <input type='submit' value='Login' />
+    </form>
 </div>
 }
