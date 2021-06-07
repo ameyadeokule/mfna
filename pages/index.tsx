@@ -1,7 +1,9 @@
+import styles from './page1.module.css'
+
 function Heading (props){
   return <div>
     <h1>{props.heading}</h1>
-    <style jsx global>
+    <style jsx>
       {`
         h1{
           color:red;
@@ -14,6 +16,6 @@ function Heading (props){
 export default function Home() {
   return<div> 
     <Heading heading='red heading' />
-  <h1>Hello World</h1>
+  <h1 className={styles.header}>Hello World</h1>
 </div>
 }
