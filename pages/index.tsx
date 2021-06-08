@@ -18,13 +18,13 @@ function Heading (props){
 
 export default function Home() {
   return<div> 
-    <form method='POST' action='/api/hello'>
+    {/* <form method='POST' action='/api/hello'>
       <input type='text' name='username' value='admin' />
       <br />
       <input type='password' name='pass' value='admin' />
       <br />
       <input type='submit' value='Login' />
-    </form>
-    <Link href='/page1'>To page 1</Link>
+    </form> */}
+    <Link href='/fruits'>To page 1</Link>
 </div>
 }
