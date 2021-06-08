@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import Link from 'next/link'
 
 import styles from './page1.module.css'
 
@@ -24,5 +25,6 @@ export default function Home() {
       <br />
       <input type='submit' value='Login' />
     </form>
+    <Link href='/page1'>To page 1</Link>
 </div>
 }
